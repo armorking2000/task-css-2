@@ -642,6 +642,394 @@ input[type="range"]::-webkit-slider-thumb {
   background: #7d7878;
   z-index: 0;
 }
+@media (max-width: 600px) {
+  /* ───────── چیدمان اصلی ───────── */
+  main {
+    display: block;
+    padding-bottom: 76px;
+    border-radius: 0;
+  }
+
+  /* ───────── سایدبار → نوار پایین ───────── */
+  aside {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 20;
+    width: 100%;
+    height: 64px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .aside-bar,
+  .aside-bar:first-child {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aside-bar[data-icon="logo"] {
+    display: none;
+  }
+
+  .aside-bar[data-icon]::before {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+
+  .aside-bar-img,
+  .aside-bar-p1,
+  .aside-bar-p2 {
+    display: none;
+  }
+
+  /* ───────── هدر ───────── */
+  header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 16px 0;
+  }
+
+  #section-text {
+    margin: 0;
+  }
+
+  .section-h1 {
+    font-size: 22px;
+  }
+
+  .section-p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  #section-button-and-search {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .section-button {
+    width: 100%;
+    margin: 0;
+    order: 2;
+  }
+
+  .search-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ───────── کارت‌های آمار ───────── */
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 18px 16px;
+  }
+
+  .card {
+    height: 124px;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .main-p-1 {
+    top: 0;
+    margin: 0 0 4px;
+    font-size: 13px;
+  }
+
+  .main-p-2 {
+    top: 0;
+    margin: 0;
+    font-size: 34px;
+  }
+
+  .main-div[data-icon] {
+    content: none;
+    left: 10px;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+  }
+
+  .main-div[data-icon="users"]      { background-image: url(./icon/group.png); }
+  .main-div[data-icon="list"]       { background-image: url(./icon/list.png); }
+  .main-div[data-icon="list-check"] { background-image: url(./icon/checked.png); }
+  .main-div[data-icon="clock"]      { background-image: url(./icon/clock.png); }
+
+  .main-p-text-1,
+  .main-p-text-2,
+  .main-p-text-3,
+  .main-p-text-4 {
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+
+  .main-p-text-4[data-icon="felesh-4"]::before {
+    position: static;
+  }
+
+  /* ───────── پروژه‌های فعال ───────── */
+  #section-layout-1 {
+    display: block;
+    position: static;
+    width: auto;
+    min-height: 0;
+    margin: 0 16px 18px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .item-1 {
+    right: 0;
+    margin: 0 0 12px;
+    font-size: 18px;
+  }
+
+  .section-ul-1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .section-ul-1 li {
+    padding: 6px 4px;
+    border-radius: 20px;
+    background-color: #eef4f4;
+  }
+
+  /* سربرگ جدول: روی موبایل فقط عنوان */
+  #section-div-parent {
+    display: block;
+    margin: 0 0 8px;
+    padding: 8px 14px;
+  }
+
+  .section-ul-2 {
+    display: none;
+  }
+
+  /* ───────── ردیف‌های پروژه ───────── */
+  .section-div-card-1,
+  .section-div-card-2,
+  .section-div-card-3 {
+    position: static;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "icon text  more"
+      "imgs imgs  imgs"
+      "stat stat  stat"
+      "bar  bar   bar"
+      "date date  date";
+    align-items: center;
+    gap: 10px 12px;
+    margin: 0;
+    padding: 14px 0;
+    border-bottom: 1px solid #eef0f0;
+  }
+
+  .section-div-card-3 {
+    border-bottom: none;
+  }
+
+  .section-div-card-1[data-icon]::before,
+  .section-div-card-2[data-icon]::before,
+  .section-div-card-3[data-icon]::before {
+    grid-area: icon;
+    margin: 0;
+  }
+
+  .section-div-text {
+    grid-area: text;
+  }
+
+  .section-div-card-p1 {
+    font-size: 15px;
+  }
+
+  .section-div-card-p2 {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  /* اعضا */
+  .div-img-1,
+  .div-img-2,
+  .div-img-3,
+  .div-img-4 {
+    content: none;
+    position: static;
+    right: auto;
+    grid-area: imgs;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .div-img-1 { background-image: url(./character/man.png); }
+  .div-img-2 { background-image: url(./character/girl.png); }
+  .div-img-3 { background-image: url(./character/magician.png); }
+  .div-img-4 { background-image: url(./character/3.png); }
+
+  /* وضعیت */
+  .div-a-1,
+  .div-a-2,
+  .div-a-3 {
+    position: static;
+    grid-area: stat;
+    justify-self: start;
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+
+  /* درصد و نوار پیشرفت */
+  .div-value {
+    position: static;
+    grid-area: bar;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .input-1[type="range"],
+  .input-2[type="range"],
+  .input-3[type="range"] {
+    position: static;
+    grid-area: bar;
+    width: 100%;
+    height: 8px;
+    margin-top: 22px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* تاریخ و دکمه‌ی سه‌نقطه */
+  .date {
+    position: static;
+    grid-area: date;
+    margin: 0;
+    font-size: 13px;
+    color: #8a9ea1;
+  }
+
+  .more-btn,
+  .more-btn-1 {
+    position: static;
+    grid-area: more;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* ───────── فعالیت‌های اخیر ───────── */
+  #section-layout-2 {
+    display: block;
+    position: relative;
+    inset: auto;
+    width: auto;
+    min-height: 0;
+    margin: 0 16px 18px;
+    padding: 16px 16px 6px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  #section-layout-2::before {
+    top: 78px;
+    bottom: 54px;
+    left: auto;
+    right: 29px;
+  }
+
+  .div-layout-2 {
+    justify-content: space-between;
+    gap: 0;
+    height: auto;
+    margin-bottom: 14px;
+  }
+
+  .div-layout-2-p {
+    top: 0;
+    margin: 0;
+  }
+
+  .div-layout-2-a {
+    top: 0;
+    left: 0;
+    font-size: 13px;
+  }
+
+  .div-layout-2-content-1,
+  .div-layout-2-content-2,
+  .div-layout-2-content-3 {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 16px;
+  }
+
+  .div-content-p {
+    flex: 1;
+    height: auto;
+    line-height: normal;
+  }
+
+  .content-p {
+    margin: 2px 0;
+    font-size: 13px;
+  }
+
+  .div-content-icon-1,
+  .div-content-icon-2,
+  .div-content-icon-3 {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+  }
+
+  .button-1,
+  .button-2,
+  .button-3 {
+    position: relative;
+    inset: auto;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+  }
+}
 :root {
   --color: rgb(5, 2, 26);
 }
