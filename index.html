@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task CSS 2</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="aside-bar" data-icon="logo">مدار</div>
+        <div class="aside-bar" data-icon="dashboard">داشبورد</div>
+        <div class="aside-bar" data-icon="project">پروژه ها</div>
+        <div class="aside-bar" data-icon="duty">وظایف</div>
+        <div class="aside-bar" data-icon="team">تیم</div>
+        <div class="aside-bar" data-icon="settings">تنظیمات</div>
+        <div class="aside-bar-img"></div>
+        <p class="aside-bar-p1">علی محمدی</p>
+        <p class="aside-bar-p2">مدیر محصول</p>
+      </aside>
+      <header>
+        <section id="section-text">
+          <h1 class="section-h1">داشبورد پروژه ها</h1>
+          <p class="section-p">نگاهی کلی به وضعیت پروژه ها ، وظایف و تیم شما</p>
+        </section>
+        <section id="section-button-and-search">
+          <button class="section-button" data-icon="plus">پروژه جدید</button>
+          <div class="search-wrapper">
+            <input id="search-bar" type="search" placeholder="جستجو..." />
+            <button class="search-btn" type="button"></button>
+          </div>
+        </section>
+      </header>
+      <section id="main">
+        <div class="card">
+          <p class="main-p-1">پروژه ها</p>
+          <p class="main-p-2">24</p>
+          <div class="main-div" data-icon="users"></div>
+          <p class="main-p-text-1" data-icon="felesh-1">14%</p>
+        </div>
+        <div class="card">
+          <p class="main-p-1">کل وظایف</p>
+          <p class="main-p-2">128</p>
+          <div class="main-div" data-icon="list"></div>
+          <p class="main-p-text-2" data-icon="felesh-2">8%</p>
+        </div>
+        <div class="card">
+          <p class="main-p-1">وظایف باز</p>
+          <p class="main-p-2">8</p>
+          <div class="main-div" data-icon="list-check"></div>
+          <p class="main-p-text-3" data-icon="felesh-3">12%</p>
+        </div>
+        <div class="card">
+          <p class="main-p-1">پروژه های تکیل شده</p>
+          <p class="main-p-2">16</p>
+          <div class="main-div" data-icon="clock"></div>
+          <p class="main-p-text-4" data-icon="felesh-4">25%</p>
+        </div>
+      </section>
+      <section id="section-layout-1">
+        <h2 class="item-1">پروژه فعال</h2>
+        <nav>
+          <ul class="section-ul-1">
+            <li>همه</li>
+            <li>در حال انجام</li>
+            <li>در حال انتظار</li>
+            <li>تکمیل شده</li>
+          </ul>
+        </nav>
+        <div id="section-div-parent">
+          <p class="section-parag-main">پروژه</p>
+          <ul class="section-ul-2">
+            <li class="section-li-list">اعضا</li>
+            <li class="section-li-list">وضعیت</li>
+            <li class="section-li-list">پیشرفت</li>
+            <li class="section-li-list">پایان تاریخ</li>
+          </ul>
+        </div>
+        <div class="section-div-card-1" data-icon="briefcase">
+          <div class="section-div-text">
+            <p class="section-div-card-p1">طراحی وبسایت</p>
+            <p class="section-div-card-p2">طراحی و توسعه وبسایت شرکتی</p>
+          </div>
+          <div class="div-img-1"></div>
+          <div class="div-img-2"></div>
+          <div class="div-img-3"></div>
+          <div class="div-img-4"></div>
+          <p class="div-value">75%</p>
+          <a class="div-a-1">در حال انجام</a>
+          <input
+            class="input-1"
+            type="range"
+            id="volume"
+            min="0"
+            max="100"
+            disabled
+          />
+          <p class="date">1404/03/25</p>
+          <button class="more-btn">⋮</button>
+        </div>
+        <div class="section-div-card-2" data-icon="iphone">
+          <div class="section-div-text">
+            <p class="section-div-card-p1">طراحی وبسایت</p>
+            <p class="section-div-card-p2">طراحی و توسعه وبسایت شرکتی</p>
+          </div>
+          <div class="div-img-1"></div>
+          <div class="div-img-2"></div>
+          <div class="div-img-3"></div>
+          <div class="div-img-4"></div>
+          <p class="div-value">40%</p>
+          <a class="div-a-2">در انتظار</a>
+          <input
+            class="input-2"
+            type="range"
+            id="volume"
+            min="0"
+            max="100"
+            disabled
+          />
+          <p class="date">1404/03/25</p>
+          <button class="more-btn">⋮</button>
+        </div>
+        <div class="section-div-card-3" data-icon="settings">
+          <div class="section-div-text">
+            <p class="section-div-card-p1">طراحی وبسایت</p>
+            <p class="section-div-card-p2">طراحی و توسعه وبسایت شرکتی</p>
+          </div>
+          <div class="div-img-1"></div>
+          <div class="div-img-2"></div>
+          <div class="div-img-3"></div>
+          <div class="div-img-4"></div>
+          <p class="div-value">100%</p>
+          <a class="div-a-3">در حال انجام</a>
+          <input
+            class="input-3"
+            type="range"
+            id="volume"
+            min="0"
+            max="100"
+            disabled
+          />
+          <p class="date">1404/03/25</p>
+          <button class="more-btn-1">⋮</button>
+        </div>
+      </section>
+      <section id="section-layout-2">
+        <div class="div-layout-2">
+          <p class="div-layout-2-p">فعالیت های اخیر</p>
+          <a class="div-layout-2-a">نمایشه همه</a>
+        </div>
+        <div class="div-layout-2-content-1">
+          <div class="div-content-p">
+            <p class="content-p">سارا احمدی وظیفه جدید ایجاد کرد</p>
+            <p class="content-p">طراحی صفحه</p>
+            <p class="content-p">10 دقیقه پیش</p>
+          </div>
+          <div class="div-content-icon-1"></div>
+          <button class="button-1"></button>
+        </div>
+        <div class="div-layout-2-content-2">
+          <div class="div-content-p">
+            <p class="content-p">محمد رضایی پروژه جدیدی ایجاد کرد</p>
+            <p class="content-p">طراحی صفحه</p>
+            <p class="content-p">10 دقیقه پیش</p>
+          </div>
+          <div class="div-content-icon-2"></div>
+          <button class="button-2"></button>
+        </div>
+        <div class="div-layout-2-content-3">
+          <div class="div-content-p">
+            <p class="content-p">سارا احمدی وظیفه جدیدی پیدا کرد</p>
+            <p class="content-p">طراحی صفحه</p>
+            <p class="content-p">10 دقیقه پیش</p>
+          </div>
+          <div class="div-content-icon-3"></div>
+          <button class="button-3"></button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
