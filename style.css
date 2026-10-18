@@ -634,6 +634,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 #section-layout-2::before {
   content: "";
+  display: block;
   position: absolute;
   top: 70px;
   bottom: 70px;
@@ -929,10 +930,10 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 18px;
   }
   #section-layout-2::before {
-    top: 78px;
+    top: 75px;
     bottom: 54px;
     left: auto;
-    right: 29px;
+    right: 23px;
   }
   .div-layout-2 {
     justify-content: space-between;
